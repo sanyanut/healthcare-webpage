@@ -1,0 +1,561 @@
+/*
+* Colors used in design.
+*   primary: #0078aa;
+*   dark: #363636;
+*   light: #fff;
+*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.up-arrow {
+  width: 60px;
+  height: 60px;
+  background-color: #0078aa;
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.up-arrow svg {
+  padding-top: 1.3em;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+}
+
+.header-logo{
+  padding-left: 10%;
+}
+
+.header-nav{
+  padding-right: 10%;
+}
+
+.nav-bar__list{
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-bar__list li {
+  padding-left: 1em;
+}
+
+.nav-bar__list li a {
+  text-decoration: none;
+  color: #363636;
+  font-weight: 600;
+}
+
+.nav-bar__list li a:hover{
+  color: #0078aa;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 800px;
+  background-image: url("/img/lady.jpg");
+  background-size: cover;
+  background-position: 20% 50%;
+}
+
+.main-intro > * {
+  padding-left: 10%;
+}
+
+.main-intro__header {
+  font-size: 3.3em;
+  width: 700px;
+}
+
+.main-intro__text {
+  font-size: 1.2em;
+  max-width: 550px;
+  margin-top: 0;
+}
+
+.main-intro__icons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;  
+}
+
+.main-intro__icons li {
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  background-color: #0078aa;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 1em;
+  cursor: pointer;
+}
+
+.main-intro__icons li:hover{
+  background-color: #fff;
+  border: 2px solid #0078aa;
+  box-sizing: border-box;
+}
+
+.main-intro__icons li:hover path {
+  fill: #0078aa;
+}
+
+.main-about{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  padding-top: 6em;
+  padding-bottom: 6em;
+  width: 100%;
+}
+
+.main-about__img {
+  width: 50%;
+}
+
+.main-about__img img{
+  width: 100%;
+  height: auto;
+}
+
+.main-about__info {
+  width: 50%;
+}
+
+.main-about__info_header{
+  margin-bottom: 1em;
+  padding-left: 2em;
+}
+
+.main-about__info_header h2{
+  font-size: 2.6em;
+  margin: 0;
+}
+
+.main-about__info_header h3 {
+  margin-top: 0;
+  color: #0078aa;
+  font-weight: 300;
+}
+
+.main-about__info_text li{
+  max-width: 500px;
+  min-width: 500px;
+}
+
+.main-about__info_text span{
+  color: #0078aa;
+}
+
+
+.main-services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("/img/services_bg.jpg");
+  width: 100%;
+}
+
+.main-services__header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1em;
+  padding-left: 2em;
+  padding-top: 4em;
+}
+
+.main-services__header h2 {
+  font-size: 2.6em;
+  margin: 0;
+}
+
+.main-services__header h3 {
+  margin-top: 0;
+  font-weight: 300;
+}
+
+.main-services__items {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2vw;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding-bottom: 60px;
+}
+
+.main-services__items_item{
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  max-width: 440px;
+  padding: 1em;
+}
+
+.main-services__items_item img {
+  width: 120px;
+}
+
+.main-offers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("/img/pricing_bg.jpg");
+  background-position: center;
+  width: 100%;
+  
+}
+
+.main-offers__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1em;
+  padding-left: 2em;
+  padding-top: 4em;
+}
+
+.main-offers__header h2{
+  font-size: 2.6em;
+  margin: 0;
+}
+
+.main-offers__header h3{
+  margin-top: 0;
+  font-weight: 300;
+}
+
+.main-offers__cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 8em;
+}
+
+.main-offers__cards_card{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  min-width: 400px;
+  min-height: 600px;
+  background-color: #47c9e5;
+  color: #fff;
+  text-align: center;
+}
+
+.main-offers__cards_card:nth-child(2){
+  background-color: #fff;
+  color: #0078aa;
+  height: 680px;
+  border: 2px solid #0078aa;
+}
+
+.card-header{
+  font-size: 1.5em;
+}
+
+.card-price {
+  font-size: 4em;
+  margin: 0.2em;
+  font-weight: 600;
+}
+
+.card-desc {
+  font-style: italic;
+  margin-top: 0;
+}
+
+.card-list{
+  padding: 0;
+}
+
+.card-list li{
+  padding: 0.7em;
+  font-size: 0.9em;
+}
+
+.card-list .cross {
+  font-size: 1.2em;
+}
+
+.card-button {
+  width: 130px;
+  height: 50px;
+  border: 2px solid #0078aa;
+  border-radius: 1em;
+  background-color: #fff;
+  color: #0078aa;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.main-appointment {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.main-appointment img{
+  width: 50%;
+}
+
+.main-appointment__form {
+  width: 50%;
+  padding-top: 6em;
+  padding-left: 3em;
+  padding-bottom: 3em;
+}
+
+.main-appointment__form h2 {
+  font-size: 2.6em;
+  margin: 0;
+}
+
+.main-appointment__form h3 {
+  margin-top: 0;
+  font-weight: 300;
+}
+
+.main-appointment__form form input {
+  border: none;
+  box-shadow: none;
+  border-bottom: 1px solid #eeeeee;
+  font-style: italic;
+  height: 40px;
+  width: 90%;
+  padding-left: 1em;
+  font-weight: 400;
+}
+
+.main-appointment__form form input[type="submit"]{
+  font-style: normal;
+  margin-top: 1em;
+  width: 90px;
+  height: 40px;
+  color: white;
+  font-weight: 600;
+  background-color: #0078aa;
+  border: 1px solid #0078aa;
+  border-radius: 1em;
+  cursor: pointer;
+}
+
+.main-appointment__form form input[type="submit"]:hover{
+  color: #0078aa;
+  background-color: #fff;
+  border: 2px solid #0078aa;
+  box-sizing: border-box;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  background-color: #363636;
+}
+
+.footer p {
+  margin: 0;
+  color: #fff;
+}
+
+
+@media screen and (max-width: 1280px) {
+  .main-intro {
+    background-position: 50% 50%;
+  }
+
+  .main-intro > * {
+    padding-left: 1%;
+  }
+
+  .main-intro__header {
+    font-size: 2.6em;
+    width: 600px;
+  }
+
+  .header-logo{
+    padding-left: 1em;
+  }
+  
+  .header-nav{
+    padding-right: 1em;
+  }
+  
+  .main-about__info_text li{
+    min-width: 200px;
+  }
+
+  .main-offers {
+    background-position: 70% 50%;
+  }
+
+
+  .main-offers__cards_card {
+    min-width: 250px;
+    min-height: 600px;
+  }
+
+  .main-appointment img {
+    height: 300px;
+    align-self: flex-end;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+  }
+
+  .nav-bar__list{
+    padding: 0;
+    font-size: 0.9em;
+  }
+
+  .main-intro {
+    align-items: center;
+    height: 600px;
+    background-position: 25% 50%;
+    margin-bottom: 3em;
+  }
+
+  .main-intro__header {
+    max-width: 500px;
+    text-align: center;
+  }
+
+  .main-intro__text {
+    max-width: 450px;
+    text-align: center;
+  }
+
+  .main-intro__icons {
+    padding-top: 2em;
+  }
+
+  .main-intro__icons li {
+    margin: 0 2em 0 2em;
+  }
+
+  .main-about {
+    margin-top: 6em;
+    flex-direction: column;
+  }
+
+  .main-about__img{
+    width: 100%;
+  }
+
+  .main-about__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 14em;
+  }
+
+  .main-about__info_header, .main-about__info_text {
+    padding: 0;
+  }
+
+  .main-services {
+    padding-top: 3em;
+  }
+
+  .main-services__items{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-services__header {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .main-offers {
+    width: 100%;
+    padding-top: 3em;
+  }
+
+  .main-offers__header{
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .main-offers__cards {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .main-offers__cards_card{
+    width: 80%;
+    margin-top: 1em;
+    padding-bottom: 0;
+  }
+
+  .main-appointment{
+    flex-direction: column;
+  }
+
+  .main-appointment img {
+    width: 100%;
+    height: auto;
+  }
+
+  .main-appointment__form {
+    width: 100%;
+    padding: 1em;
+    text-align: center;
+  }
+
+  .main-appointment__form form input {
+    padding: 0;
+    margin-right: 1em;
+  }
+
+}
